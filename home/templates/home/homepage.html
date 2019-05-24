@@ -1,0 +1,149 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Cultural Board IITG</title>
+    <link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600">
+    <link rel="stylesheet" href="{% static 'home/css/Article-List.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/Footer-Dark.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+    <link rel="stylesheet" href="{% static 'home/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/Team-Boxed.css' %}">
+</head>
+
+<body class="text-center">
+    <section id="section_top">
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container-fluid"><a class="navbar-brand" data-bs-hover-animate="pulse" href="#"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">The Clubs</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">LitSoc | Literary Club</a><a class="dropdown-item" role="presentation" href="#">Octaves | Music Club</a><a class="dropdown-item" role="presentation" href="#">Xpression | Drama Club</a>
+                                <a
+                                    class="dropdown-item" role="presentation" href="#">DebSoc | Debate Club</a><a class="dropdown-item" role="presentation" href="#">Anchorenza | Anchoring Club</a><a class="dropdown-item" role="presentation" href="#">Cadence | Dance Club</a><a class="dropdown-item" role="presentation"
+                                        href="#">DebSoc| Debating Club</a><a class="dropdown-item" role="presentation" href="#">Montage| Photography Club</a><a class="dropdown-item" role="presentation" href="#">Lumiere | Movie Club</a></div>
+                        </li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Events</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item" role="presentation"></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
+        <h1 class="text-center" data-aos="fade-up" data-aos-duration="600" data-aos-once="true" id="title" style="color: rgb(0,0,0);opacity: 1;"><strong>Cultural Board</strong></h1>
+        <h3 data-aos="fade-up" data-aos-duration="600" data-aos-once="true" id="sub_title" style="color: rgb(0,0,0);opacity: 1;">Where it all begins.</h3>
+    </section>
+    <section data-bs-parallax-bg="true" id="about" style="height: 508px;width: 100%;background-image: url({% static 'home/img/top.jpg' %});background-position: center;background-size: cover;">
+        <h1 style="opacity: 1;padding: 84px;font-size: 53px;font-family: Montserrat, sans-serif;">About Us</h1>
+        <p class="text-center" id="about_text" style="font-style: italic;font-weight: normal;font-size: 18px;font-family: ABeeZee, sans-serif;">{{ about.about_text }}</p>
+    </section>
+    <div id="upcoming_events" class="article-list">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Upcoming Events</h2>
+                <p class="text-center"></p>
+            </div>
+            <div class="row articles">
+                <div class="col-sm-6 col-md-4 item" data-aos="fade-left"><a href="#"><img class="img-fluid" src="{{ event1.image.url }}"></a>
+                    <h3 class="name">{{ event1.event_title }}</h3>
+                    <p class="description">{{ event1.event_details }}</p>
+                    <em class="float-centre">{{ event1.date }}</em>
+                    <br>
+                    <em class="float-centre">{{ event1.venue }}</em>
+                </div>
+                <div class="col-sm-6 col-md-4 item" data-aos="fade-up" data-aos-delay="50"><a href="#"><img class="img-fluid" src="{{ event1.image.url }}"></a>
+                    <h3 class="name">{{ event2.event_title }}</h3>
+                    <p class="description">{{ event2.event_details }}</p>
+                    <em class="float-centre">{{ event2.date }}</em>
+                    <br>
+                    <em class="float-centre"><br>{{ event2.venue }}</em>
+                </div>
+            <div class="col-sm-6 col-md-4 item" data-aos="fade-right" data-aos-delay="100"><a href="#"><img class="img-fluid" src="{{ event3.image.url }}"></a>
+                <h3 class="name">{{ event3.event_title }}</h3>
+                <p class="description">{{ event3.event_details }}</p>
+                <em class="float-centre">{{ event3.date }}</em>
+                <br>
+                <em class="float-centre">{{ event3.venue }}</em>
+            </div>
+    </div>
+    </div>
+    </div>
+    <div class="team-boxed">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Team </h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div data-aos="flip-left" class="box"><img class="rounded-circle" src="{{ team1.image.url }}">
+                        <h3 class="name">{{ team1.name }}</h3>
+                        <p class="title">{{ team1.position }}</p>
+                        <p class="description">{{ team1.description }}</p>
+                        <p class="description">{{ team1.email }}</p>
+                        <p class="description">{{ team1.contact }}</p>
+                        <div class="social"><a href="{{ team1.fb }}"><i class="fa fa-facebook-official"></i></a><a href="{{ team1.insta }}"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div data-aos="flip-left" data-aos-delay="100" class="box"><img class="rounded-circle" src="{{ team2.image.url }}">
+                        <h3 class="name">{{ team2.name }}</h3>
+                        <p class="title">{{ team3.position }}</p>
+                        <p class="description">{{ team2.description }}</p>
+                        <p class="description">{{ team2.email }}</p>
+                        <p class="description">{{ team2.contact }}</p>
+                         <div class="social"><a href="{{ team2.fb }}"><i class="fa fa-facebook-official"></i></a><a href="{{ team2.insta }}"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div data-aos="flip-left" data-aos-delay="200" class="box"><img class="rounded-circle" src="{{ team3.image.url }}">
+                        <h3 class="name">{{ team3.name }}</h3>
+                        <p class="title">{{ team3.position }}</p>
+                        <p class="description">{{ team3.description }}</p>
+                        <p class="description">{{ team3.email }}</p>
+                        <p class="description">{{ team3.contact }}</p>
+                        <div class="social"> <div class="social"><a href="{{ team3.fb }}"><i class="fa fa-facebook-official"></i></a><a href="{{ team3.insta }}"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-dark">
+        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-android-mail"></i></a><a href="#"><i class="icon ion-social-youtube"></i></a></div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3></h3>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">Cultural Board, IIT Guwahati © 2019</p>
+            </div>
+        </footer>
+    </div>
+    <script src="{% static 'home/js/jquery.min.js' %}"></script>
+    <script src="{% static 'home/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'home/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+</body>
+
+</html>
