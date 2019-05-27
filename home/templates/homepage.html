@@ -38,7 +38,7 @@
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#">Events</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#">Blog</a></li>
                         <li class="nav-item" role="presentation"></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact Us</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'contact:contact' %}">Contact Us</a></li>
                     </ul>
             </div>
             </div>
@@ -57,7 +57,7 @@
                 <p class="text-center"></p>
             </div>
             <div class="row articles">
-                <div class="col-sm-6 col-md-4 item" data-aos="fade-left"><a href="#"><img class="img-fluid" src="{{ event1.image.url }}"></a>
+                <div class="col-sm-6 col-md-4 item" data-aos="fade-left"><a href="{{ event1.image.url }}"><img class="img-fluid" src="{{ event1.image.url }}"></a>
                     <h3 class="name">{{ event1.event_title }}</h3>
                     <p class="description">{{ event1.event_details }}</p>
                     <em class="float-centre">{{ event1.date }}</em>
@@ -85,7 +85,6 @@
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">Team </h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
             </div>
             <div class="row people">
                 <div class="col-md-6 col-lg-4 item">
@@ -95,7 +94,7 @@
                         <p class="description">{{ team1.description }}</p>
                         <p class="description">{{ team1.email }}</p>
                         <p class="description">{{ team1.contact }}</p>
-                        <div class="social"><a href="{{ team1.fb }}"><i class="fa fa-facebook-official"></i></a><a href="{{ team1.insta }}"><i class="fa fa-instagram"></i></a></div>
+                        <div class="social"><a href="{{ team1.fb }}"><i class="fa fa-facebook-official"></i></a><a href="{{ team1.instagram }}"><i class="fa fa-instagram"></i></a></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
@@ -105,7 +104,7 @@
                         <p class="description">{{ team2.description }}</p>
                         <p class="description">{{ team2.email }}</p>
                         <p class="description">{{ team2.contact }}</p>
-                         <div class="social"><a href="{{ team2.fb }}"><i class="fa fa-facebook-official"></i></a><a href="{{ team2.insta }}"><i class="fa fa-instagram"></i></a></div>
+                         <div class="social"><a href="{{ team2.fb }}"><i class="fa fa-facebook-official"></i></a><a href="{{ team2.instagram }}"><i class="fa fa-instagram"></i></a></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
@@ -115,7 +114,7 @@
                         <p class="description">{{ team3.description }}</p>
                         <p class="description">{{ team3.email }}</p>
                         <p class="description">{{ team3.contact }}</p>
-                        <div class="social"> <div class="social"><a href="{{ team3.fb }}"><i class="fa fa-facebook-official"></i></a><a href="{{ team3.insta }}"><i class="fa fa-instagram"></i></a></div>
+                        <div class="social"> <div class="social"><a href="{{ team3.fb }}"><i class="fa fa-facebook-official"></i></a><a href="{{ team3.instagram }}"><i class="fa fa-instagram"></i></a></div>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ class About(models.Model):
 
 
 class Upcoming_Events(models.Model):
-    image = models.FileField()
+    image = models.FileField(upload_to='Upcoming_Events')
     event_title = models.CharField(max_length=30)
     event_details = models.TextField()
     date = models.CharField(max_length=20, blank=True, null=True)
@@ -24,5 +24,5 @@ class Team(models.Model):
     contact = models.CharField(max_length=15)
     email = models.CharField(max_length=50)
     fb = models.CharField(max_length=50, blank=True, null=True)
-    insta = models.CharField(max_length=50, blank=True, null=True)
+    instagram = models.CharField(max_length=50, blank=True, null=True)
 
