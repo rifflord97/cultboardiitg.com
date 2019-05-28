@@ -3,8 +3,8 @@ from .models import About, Team, Upcoming_Events
 
 def index(request):
     about = About.objects.get(pk=1)
-    latest = Upcoming_Events.objects.all().order_by('pk')[:3]
-    team = Team.objects.all().order_by('pk')[:3]
+    latest = Upcoming_Events.objects.all().order_by('-pk')[:3]
+    team = Team.objects.all().order_by('-pk')[:3]
     team1 = team[0]
     team2 = team[1]
     team3 = team[2]

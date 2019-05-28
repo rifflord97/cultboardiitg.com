@@ -25,12 +25,6 @@ SECRET_KEY = '#a0fh0n!8i+4kk&nt0*(ss3zy3txe@^0vh6+(^fz*rr*to*0rx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'cultboardiitg@gmail.com'
-EMAIL_HOST_PASSWORD = 'infinity@12'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 ALLOWED_HOSTS = []
 
@@ -45,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
-    'contact_us.apps.ContactUsConfig'
 ]
 
 MIDDLEWARE = [
@@ -65,7 +58,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             './home/templates',
-            './contact_us/templates',
+            './all_events/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {

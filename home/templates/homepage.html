@@ -35,10 +35,16 @@
                                     class="dropdown-item" role="presentation" href="#">DebSoc | Debate Club</a><a class="dropdown-item" role="presentation" href="#">Anchorenza | Anchoring Club</a><a class="dropdown-item" role="presentation" href="#">Cadence | Dance Club</a><a class="dropdown-item" role="presentation"
                                         href="#">DebSoc| Debating Club</a><a class="dropdown-item" role="presentation" href="#">Montage| Photography Club</a><a class="dropdown-item" role="presentation" href="#">Lumiere | Movie Club</a></div>
                         </li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Events</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Events</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">PAF | Performing Arts Festival</a>
+                                <a class="dropdown-item" role="presentation" href="https://www.facebook.com/alcheringaiitg/">Alcheringa</a>
+                                <a class="dropdown-item" role="presentation" href="#">Manthan</a>
+                                <a class="dropdown-item" role="presentation" href="{% url 'all_events:events' %}">Club Showcases</a>
+                            </div>
+                        </li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#">Blog</a></li>
                         <li class="nav-item" role="presentation"></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'contact:contact' %}">Contact Us</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">The Team</a></li>
                     </ul>
             </div>
             </div>
@@ -78,6 +84,7 @@
                 <br>
                 <em class="float-centre">{{ event3.venue }}</em>
             </div>
+
     </div>
     </div>
     </div>

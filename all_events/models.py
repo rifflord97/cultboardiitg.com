@@ -1,4 +1,3 @@
 from django.db import models
-from home.models import Team
 
-
+# Create your models here.

@@ -1,0 +1,96 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Cultural Board IITG (copy)</title>
+    <link rel="stylesheet" href="{% static 'events/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'events/fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600">
+    <link rel="stylesheet" href="{% static 'events/css/Article-List.css' %}">
+    <link rel="stylesheet" href="{% static 'events/css/Footer-Dark.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+    <link rel="stylesheet" href="{% static 'events/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'events/css/Team-Boxed.css' %}">
+</head>
+
+<body class="text-center">
+    <section id="section_top" style="height: 143px;background-color: #ffffff;">
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container-fluid"><a class="navbar-brand" data-bs-hover-animate="pulse" href="#"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'home:index' %}">Home</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">The Clubs</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">LitSoc | Literary Club</a><a class="dropdown-item" role="presentation" href="#">Octaves | Music Club</a><a class="dropdown-item" role="presentation" href="#">Xpression | Drama Club</a>
+                                <a
+                                    class="dropdown-item" role="presentation" href="#">DebSoc | Debate Club</a><a class="dropdown-item" role="presentation" href="#">Anchorenza | Anchoring Club</a><a class="dropdown-item" role="presentation" href="#">Cadence | Dance Club</a><a class="dropdown-item" role="presentation"
+                                        href="#">DebSoc| Debating Club</a><a class="dropdown-item" role="presentation" href="#">Montage| Photography Club</a><a class="dropdown-item" role="presentation" href="#">Lumiere | Movie Club</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Events</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">PAF | Performing Arts Festival</a>
+                                <a class="dropdown-item" role="presentation" href="https://www.facebook.com/alcheringaiitg/">Alcheringa</a>
+                                <a class="dropdown-item" role="presentation" href="#">Manthan</a>
+                                <a class="dropdown-item" role="presentation" href="{% url 'all_events:events' %}">Club Showcases</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item" role="presentation"></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">The Team</a></li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
+        <h1 class="text-center" data-aos="fade-up" data-aos-duration="600" data-aos-once="true" id="title" style="color: rgb(0,0,0);opacity: 1;font-family: 'Alfa Slab One', cursive;margin: 29px;"><strong>THE</strong>&nbsp;EVENTS</h1>
+    </section>
+    <div id="upcoming_events" class="article-list">
+        <div class="container">
+
+            <div class="row articles">
+                {% for ev in event %}
+                <div class="col-sm-6 col-md-4 item" data-aos="fade-left"><a href="{{ ev.image.url }}"><img class="img-fluid" src="{{ ev.image.url }}"></a>
+                    <h3 class="name">{{ ev.event_title }}</h3>
+                    <p class="description">{{ ev.event_details }}</p>
+                    <em class="float-centre">{{ ev.date }}</em>
+                    <br>
+                    <em class="float-centre">{{ ev.venue }}</em>
+                </div>
+                {% endfor %}
+
+    </div>
+    </div>
+    </div>
+    <div class="footer-dark">
+        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-android-mail"></i></a><a href="#"><i class="icon ion-social-youtube"></i></a></div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3></h3>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">Cultural Board, IIT Guwahati © 2019</p>
+            </div>
+        </footer>
+    </div>
+    <script src="{% static 'events/js/jquery.min.js' %}"></script>
+    <script src="{% static 'events/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'events/js/bs-animation.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+</body>
+
+</html>
