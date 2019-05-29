@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
+    'team.apps.TeamConfig',
+    'all_events.apps.AllEventsConfig',
 ]
 
 MIDDLEWARE = [
@@ -59,6 +61,7 @@ TEMPLATES = [
         'DIRS': [
             './home/templates',
             './all_events/templates',
+            './team/templates'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
