@@ -1,0 +1,40 @@
+#hero {
+  background-image: url("../../assets/img/hero-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #333;
+  height: 50vh;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #hero {
+    background-image: url("../../assets/img/hero.jpg");
+  }
+}
+
+.navbar-light .navbar-brand {
+  background-image: url("../../assets/img/logo.svg");
+  width: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+#navcol-1 {
+  font-size: 13px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #222;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #f8e53a;
+  font-weight: normal;
+}
+

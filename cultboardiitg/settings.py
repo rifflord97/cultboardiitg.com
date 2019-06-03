@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'team.apps.TeamConfig',
     'all_events.apps.AllEventsConfig',
+    'manthan.apps.ManthanConfig',
 ]
 
 MIDDLEWARE = [
@@ -61,7 +62,8 @@ TEMPLATES = [
         'DIRS': [
             './home/templates',
             './all_events/templates',
-            './team/templates'
+            './team/templates',
+            './manthan/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -70,6 +72,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },

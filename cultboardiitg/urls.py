@@ -22,10 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('all_events/', include('all_events.urls')),
     path('team/', include('team.urls')),
+    path('manthan/', include('manthan.urls')),
     path('', include('home.urls')),
 
-]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

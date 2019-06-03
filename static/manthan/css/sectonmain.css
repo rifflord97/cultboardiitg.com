@@ -1,0 +1,14 @@
+.navbar-light .navbar-nav .nav-link {
+  color: #222;
+}
+
+#videos {
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #f8e53a;
+  font-weight: normal;
+}
+
