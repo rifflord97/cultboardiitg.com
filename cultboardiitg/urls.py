@@ -18,11 +18,24 @@ from django.urls import path, include
 
 from django.conf import settings
 from django.conf.urls.static import static
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('all_events/', include('all_events.urls')),
     path('team/', include('team.urls')),
     path('manthan/', include('manthan.urls')),
-    path('', include('home.urls')),
+    path('clubs/xpressions/', include('xpressions.urls')),
+    path('home/', include('home.urls')),
+    path('clubs/anr/', include('anr.urls')),
+    path('clubs/cadence/', include('cadence.urls')),
+    #path('clubs/debsoc/', include('debsoc.urls')),
+    #path('clubs/finnesse/', include('finnesse.urls')),
+    #path('clubs/litsoc/', include('litsoc.urls')),
+    #path('clubs/lumiere/', include('lumiere.urls')),
+    #path('clubs/montage/', include('montage.urls')),
+    #path('clubs/octaves/', include('octaves.urls')),
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -42,6 +42,16 @@ INSTALLED_APPS = [
     'team.apps.TeamConfig',
     'all_events.apps.AllEventsConfig',
     'manthan.apps.ManthanConfig',
+    #'octaves.apps.OctavesConfig',
+    'xpressions.apps.XpressionsConfig',
+    'anr.apps.AnrConfig',
+    'cadence.apps.CadenceConfig',
+    #'debsoc.apps.DebsocConfig',
+    #'finnesse.apps.FinnesseConfig',
+    #'litsoc.apps.LitsocConfig',
+    #'lumiere.apps.LumiereConfig',
+    #'montage.apps.MontageConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -64,6 +74,7 @@ TEMPLATES = [
             './all_events/templates',
             './team/templates',
             './manthan/templates',
+
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -133,6 +144,7 @@ STATICFILES_DIRS = [
     './static',
 ]
 STATIC_URL = '/static/'
+
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'

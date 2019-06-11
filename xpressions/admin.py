@@ -1,3 +1,13 @@
 from django.contrib import admin
+from .models import Club_sec, Gallery, Youtube, Club_Member, Acheivement, Imp_Link
+from embed_video.admin import AdminVideoMixin
 
-# Register your models here.
+admin.site.register(Club_sec)
+admin.site.register(Gallery)
+admin.site.register(Youtube)
+admin.site.register(Club_Member)
+admin.site.register(Acheivement)
+admin.site.register(Imp_Link)
+
+
+

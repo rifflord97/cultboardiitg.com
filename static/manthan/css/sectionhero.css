@@ -1,21 +1,15 @@
 #hero {
-  background-image: url("../../assets/img/hero-mobile.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #333;
-  height: 50vh;
+  height: 60%;
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  #hero {
-    background-image: url("../../assets/img/hero.jpg");
-  }
-}
-
 .navbar-light .navbar-brand {
-  background-image: url("../../assets/img/logo.svg");
+  height: 20%;
+  background-image: url("../../manthan/img/logo.svg");
   width: 150px;
   background-position: center;
   background-repeat: no-repeat;

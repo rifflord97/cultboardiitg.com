@@ -25,6 +25,9 @@
         <option value="$MODULE_DIR$/team/templates" />
         <option value="$MODULE_DIR$/all_events/templates" />
         <option value="$MODULE_DIR$/manthan/templates" />
+        <option value="$MODULE_DIR$/xpressions/templates" />
+        <option value="$MODULE_DIR$/cadence/templates" />
+        <option value="$MODULE_DIR$/anr/templates" />
       </list>
     </option>
   </component>
