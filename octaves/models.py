@@ -21,7 +21,7 @@ class Youtube(models.Model):
 
 
 class Club_Member(models.Model):
-    image1 = models.FileField(blank=True, null=True)
+    image_1 = models.FileField(blank=True, null=True)
     name1 = models.CharField(max_length=100, blank=True, null=True)
     facebook1 = models.CharField(max_length=100, blank=True, null=True)
     instagram1 = models.CharField(max_length=100, blank=True, null=True)

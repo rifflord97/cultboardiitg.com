@@ -30,10 +30,10 @@ urlpatterns = [
     path('clubs/cadence/', include('cadence.urls')),
     #path('clubs/debsoc/', include('debsoc.urls')),
     #path('clubs/finnesse/', include('finnesse.urls')),
-    #path('clubs/litsoc/', include('litsoc.urls')),
+    path('clubs/litsoc/', include('litsoc.urls')),
     #path('clubs/lumiere/', include('lumiere.urls')),
     #path('clubs/montage/', include('montage.urls')),
-    #path('clubs/octaves/', include('octaves.urls')),
+    path('clubs/octaves/', include('octaves.urls')),
 
 ]
 

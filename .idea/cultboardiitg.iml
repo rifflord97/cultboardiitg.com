@@ -28,6 +28,8 @@
         <option value="$MODULE_DIR$/xpressions/templates" />
         <option value="$MODULE_DIR$/cadence/templates" />
         <option value="$MODULE_DIR$/anr/templates" />
+        <option value="$MODULE_DIR$/litsoc/templates" />
+        <option value="$MODULE_DIR$/octaves/templates" />
       </list>
     </option>
   </component>

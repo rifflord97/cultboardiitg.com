@@ -6,56 +6,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Brand</title>
-    <link rel="stylesheet" href="{% static 'cadence/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'litsoc/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
-    <link rel="stylesheet" href="{% static 'cadence/fonts/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="{% static 'cadence/fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'litsoc/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'litsoc/fonts/ionicons.min.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600">
-    <link rel="stylesheet" href="{% static 'cadence/css/Footer-Dark.css' %}">
-    <link rel="stylesheet" href="{% static 'cadence/css/Article-List.css' %}">
+    <link rel="stylesheet" href="{% static 'litsoc/css/cb_footer.css' %}">
+    <link rel="stylesheet" href="{% static 'litsoc/css/cb_top.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
-    <link rel="stylesheet" href="{% static 'cadence/css/Team-Boxed.css' %}">
+    <link rel="stylesheet" href="{% static 'litsoc/css/Team-Boxed.css' %}">
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-light navbar-expand-md ">
-        <div class="container-fluid"><a class="navbar-brand" data-bs-hover-animate="pulse" href="#"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">The Clubs</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">LitSoc | Literary Club</a><a class="dropdown-item" role="presentation" href="#">Ocatves | Music Club</a><a class="dropdown-item" role="presentation" href="#">Xpression | Drama Club</a>
-                            <a class="dropdown-item" role="presentation" href="#">DebSoc | Debate Club</a><a class="dropdown-item" role="presentation" href="#">Anchorenza | Anchoring Club</a><a class="dropdown-item" role="presentation" href="#">Cadence | Dance Club</a><a class="dropdown-item" role="presentation"
-                                        href="#">DebSoc| Debating Club</a><a class="dropdown-item" role="presentation" href="#">Montage| Photography Club</a><a class="dropdown-item" role="presentation" href="#">Lumiere | Movie Club</a></div>
-                    </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Events</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">PAF | Performing Arts Festival</a>
-                            <a class="dropdown-item" role="presentation" href="https://www.facebook.com/alcheringaiitg/">Alcheringa</a>
-                            <a class="dropdown-item" role="presentation" href="#">Manthan</a>
-                            <a class="dropdown-item" role="presentation" href="{% url 'all_events:events' %}">Club Showcases</a>
-                        </div>
-                    </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">The Team</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <section id="section_top" style="height: 170px;margin-bottom: 0px;padding-bottom: 160px;">
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container-fluid"><a class="navbar-brand" data-bs-hover-animate="pulse" href="#"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="background-color: rgba(255,255,255,0);color: rgba(0,0,0,0.5);"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">The Clubs</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">LitSoc | Literary Club</a><a class="dropdown-item" role="presentation" href="#">Octaves | Music Club</a><a class="dropdown-item" role="presentation" href="#">Xpression | Drama Club</a>
+                                <a
+                                    class="dropdown-item" role="presentation" href="#">DebSoc | Debate Club</a><a class="dropdown-item" role="presentation" href="#">Anchorenza | Anchoring Club</a><a class="dropdown-item" role="presentation" href="#">litsoc | Dance Club</a><a class="dropdown-item" role="presentation"
+                                        href="#">DebSoc| Debating Club</a><a class="dropdown-item" role="presentation" href="#">Montage| Photography Club</a><a class="dropdown-item" role="presentation" href="#">Lumiere | Movie Club</a></div>
+                        </li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Events</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item" role="presentation"></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
     </section>
     <nav class="navbar navbar-dark navbar-expand-lg sticky-top bg-dark" id="mainNav">
         <div class="container"><a class="navbar-brand" data-bs-hover-animate="bounce" target="_top" href="#section_top">Brand</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="wobble" href="#about">About Us</a></li>
+                <ul class="nav navbar-nav ml-auto text-uppercase" style="width: 922px;font-size: 14px;">
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="wobble" href="#about">We</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="wobble" href="#gallery">Gallery</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="wobble" href="#wedo">What We Do</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="wobble" id="wwd" href="#wedo">What We Do</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="wobble" href="#videos">Videos</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="wobble" href="#team">Club Members</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" data-bs-hover-animate="wobble" href="#acheivements">Acheivements</a></li>
@@ -66,18 +62,30 @@
         </div>
     </nav>
     <div id="about">
-        <div class="container" style="padding-top: 20px;">
+        <div class="container" style="padding-top: 20px;height: auto;">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>About Us</h1>
+                    <h1>We</h1>
                 </div>
             </div>
             <div class="row" style="padding: 18px;">
-                <div class="col-md-6">
-                    <p style="height: 330px;">Cadence is the dance club at IIT Guwahati. We, at Cadence, work towards promoting dance culture among the campus residents. Our team members are quite proficient in various dance forms like hip hop, locking , popping, animation and bollywood. Along with taking part in competitions on and off campus, we also conduct several events and dance workshops for the campus residents.
-                    </p>
+                <div class="col-md-6" style="height: auto;">
+                    <div class="row">
+                        <div class="col">
+                            <p style="height: auto;">It’s a club which comprises of individuals who have a passion for creative writing.&nbsp;The club wholeheartedly welcomes all the people who are&nbsp;associated with any literary discipline (Novels, Stories, Poems, Ghazals,<br>Nazms,
+                                Scripts, Articles <em>etc</em>.) of any language (English, Hindi, Urdu,&nbsp;Assamese, Bengali, Marathi, Gujarati <em>etc.</em>). The present Literary Society(Lit-Soc) is the combined form of two past societies <em>i.e.</em>,
+                                Literary&nbsp;Society IIT Guwahati and Poets Corner IIT Guwahati. <br></p>
+                        </div>
+                    </div>
+                    <div class="row" style="height: auto;">
+                        <div class="col">
+                            <h2 style="height: 53px;"><strong>हम </strong><br><br></h2>
+                            <p style="height: auto;">यह क्लब&nbsp;साहित्यिक लेखन में रूचि रखने वाले लोगों का समूह है | यह क्लब साहित्य की सभी विधाओं (जैसे उपन्यास, कहानी, कविता, ग़ज़ल, नज़्म, स्क्रिप्ट, लेख, संस्मरण इत्यादि) एवं सभी भाषाओं (जैसे अंग्रेजी, हिंदी, उर्दू, आसामी, बंगाली,
+                                मराठी, गुजरती, इत्यादि) से जुड़े लोगों का तह-ए-दिल से स्वागत करता है | वर्तमान की Literary Society (Lit-Soc) पूर्व की दो संस्थाओं, Literary Society IIT Guwahati एवं Poets Corner IIT Guwahati का सम्मिलित रूप है |<br><br><br><br><br><br><br></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" style="width: auto;">
                     <div class="carousel slide" data-ride="carousel" id="carousel-2">
                         <div class="carousel-inner text-center" role="listbox">
                             {% for s in secy %}
@@ -90,16 +98,15 @@
                                     <h3 class="name">{{ s.name }}</h3>
                                     <p class="title">{{ s.position }}</p>
                                     <p class="title">{{ s.description }}</p>
-                                    <p style="height: auto;">Contact: {{ s.contact }}</p>
+                                    <p style="height: auto;">Contact: {{ s.contact_us }}</p>
                                     <p style="height: auto;">Email: {{ s.email_us }}</p>
                                     <div class="social" style="padding: 0px;margin-bottom: 38px;"><a href="#{{ s.facebook }}" style="margin: 5px;"><i class="fa fa-facebook-official"></i></a><a href="#{{ s.instagram }}"><i class="fa fa-instagram"></i></a></div>
                                 </div>
                             {% endfor %}
-                            </div>
                         </div>
-                        <div><a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev"><span class="carousel-control-prev-icon border rounded-circle" style="background-color: #000000;"></span><span class="sr-only" style="background-color: #ffffff;">Previous</span></a>
+                        <div><a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev"><span class="carousel-control-prev-icon" style="background-color: #000000;"></span><span class="sr-only" style="background-color: #ffffff;">Previous</span></a>
                             <a
-                                class="carousel-control-next" href="#carousel-2" role="button" data-slide="next"><span class="carousel-control-next-icon border rounded-circle" style="background-color: #000000;"></span><span class="sr-only">Next</span></a>
+                                class="carousel-control-next" href="#carousel-2" role="button" data-slide="next"><span class="carousel-control-next-icon" style="background-color: #000000;"></span><span class="sr-only">Next</span></a>
                         </div>
                         <ol class="carousel-indicators" style="color: rgb(255,255,255);background-color: #000000;margin: 1px;">
                             <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
@@ -143,31 +150,44 @@
             </div>
         </div>
     </section>
-
-    <section id="wedo">
-        <div class="container">
-            <div>
-                <h1 class="text-center">What We Do</h1>
-            </div>
-            <div class="text-left">
-                <p>Organising various dance events within the campus and participate in competitions outside the campus. Some of them are-</p>
-                <ul>
-                    <li>Step-Up(Fresher's dance competition)</li>
-                    <li>Narthaki(Solo-Classical Dance competition)</li>
-                    <li>Freshers Cult-Night</li>
-                    <li>PAF</li>
-                </ul>
-                <p>We also organize fun events such as- </p>
-                <ul>
-                    <li>Masquerade Ball</li>
-                    <li>Flash mob</li>
-                    <li>Ball night</li>
-                </ul>
-                <p>We also invite various dancers from all over India to conduct workshops. The guidance and encouragement of Dr. Anwesa Mahanta,a Sattriya dancer and researcher is always there. </p>
+    <div id="wedo">
+        <div class="container" id="wwd">
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <h1 style="height: 50px;"><strong>What we do</strong><br><br><br><br><br><br></h1>
+                    </div>
+                    <div>
+                        <p style="height: auto;">The most&nbsp;important activity involves a weekly gathering for the literary discussions known as “Majma” in which the club members recite their or other’s poetries and<br>have a discussion about poets, writers, novels, writing
+                            styles, technicalities&nbsp;of literature <em>etc.</em> <br>We also release&nbsp;the recordings of the poems/ghazals of the club members on Youtube as the episodic series “Alfaz-e-Sukhan”&nbsp;(Name may be changed in near future).<br>The
+                            club also&nbsp;organizes ‘Kavi Sammelan’ and ‘Mushayara’ from time to time where renowned&nbsp;poets and shayars are invited from the prominent literary organizations such as<br>‘Rekhta’. <br>The club also&nbsp;releases the
+                            recorded interview series of writes/poets as “Harfkaar” where they&nbsp;discuss about their literary art.<br>The club also&nbsp;releases the recorded series of &nbsp;poems/ghazals of the poets coming for Kavi<br>Sammelan as
+                            “Alfaz-e-Sukhan Specials” on Youtube (may be renamed in future).<br>The club time&nbsp;to time organizes open mics in collaboration with out-campus literary&nbsp;organizations such as ‘YourQuote’, ‘East India Poets’, ‘Virsaaa’
+                            <em>etc.</em><br>and provides a qualitative platform for the writers and poets of the campus to&nbsp;participate in out-campus literary activities and competitions. <br>In&nbsp;collaboration with the ‘Hindi Cell, IIT Guwahati’,
+                            the club arranges various&nbsp;events such as Kavi Sammelan, Hindi Literature Exhibition, Hindi Poetry Writing&nbsp;Competition, Hindi Poetry Recitation Competition, Hindi Short Story Writing&nbsp;Competition, Hindi Quiz <em>etc.</em>                            during ‘Hindi Fortnight Celebrations’ from&nbsp;1st -15th September of every year. <br>We also&nbsp;organize several competitions, workshops, lectures, invited talks <em>etc.&nbsp;</em>in varying disciplines of literature.
+                            <br>The club in&nbsp;collaboration with Debating Society (Deb-Soc) IIT Guwahati&nbsp;publishes an annual literary magazine comprising of articles, stories, poems of&nbsp;the club members.<br>Apart from the&nbsp;ones mentioned
+                            above we highly welcome new ideas and projects to be taken up.&nbsp;So if anyone of you has something new in your mind we would be happy to hear&nbsp;from you.<br></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h1 class="text-right" style="height: 53px;"><strong>हमारी गतिविधियाँ </strong><br><br><br><br><br><br></h1>
+                    </div>
+                    <div>
+                        <p class="text-right" style="height: auto;">क्लब की सबसे अहम् गतिविधि साप्ताहांत साहित्यिक परिचर्चा “मजमा” है, जिसमे क्लब के&nbsp;सदस्य कविता पाठ (स्वलिखित/ अन्य), कवि चर्चा, लेखक चर्चा, उपन्यास चर्चा, लेखन की तकनीकियों&nbsp;से जुड़ी चर्चा इत्यादि करते है | <br>क्लब Youtube
+                            पर अपने सदस्य&nbsp;कवियों/ शायरों की<br>कविताओं / ग़ज़लों इत्यादि की&nbsp;रिकॉर्डिंग सीरीज “अल्फाज़ ए सुखन” (नाम भविष्य में&nbsp;परिवर्तनशील) नाम से जारी&nbsp;करता है |<br>क्लब समय समय पर&nbsp;परिसर में कवि सम्मेलनों का भी आयोजन
+                            करता है जिसमें रेख़्ता जैसे ग्रुप से&nbsp;जुड़े बड़े कवियों और शायरों को आमंत्रित किया जाता है | <br>क्लब Youtube पर लेखकों/शायरों की इंटरव्यू सीरीज “हर्फकार” नाम से जारी करता है जिसमे उनसे साहित्य लेखन से जुड़े&nbsp;पहलुओं पर
+                            बात की जाती है |<br>क्लब कवि सम्मलेन&nbsp;में आने वाले कवियों के कुछ चुनिन्दा कलामों की रिकॉर्डिंग “अल्फाज़ ए सुखन Specials” (नाम भविष्य में परिवर्तनशील) नाम से Youtube पर जारी करता है&nbsp;|<br>क्लब समय समय पर&nbsp;संस्थान
+                            के बाहर की साहित्यिक संस्थाओं जैसे ‘YourQuote’, ‘East India Poets’, ‘Virsaaa’ इत्यादि के साथ<br>मिलकर Open Mic का आयोजन करता है और कैंपस<br>के लेखकों और कवियों को परिसर के बाहर विभिन्न स्थानों पर आयोजित हो रही साहित्यिक&nbsp;गतिविधियों
+                            एवं प्रतियोगिताओं में सहभागिता करने का अवसर प्रदान करता है |<br>क्लब प्रत्येक&nbsp;वर्ष के सितम्बर माह में संस्थान के ‘राजभाषा प्रकोष्ठ’ के साथ मिलकर “हिंदी पखवाड़े” के अंतर्गत भी&nbsp;कई कार्यक्रमों जैसे कवि सम्मलेन, हिंदी
+                            साहित्य प्रदर्शनी, हिंदी कविता लेखन&nbsp;प्रतियोगिता, हिंदी कविता पाठ<br>प्रतियोगिता, हिंदी लघुकथा&nbsp;लेखन प्रतियोगिता, हिंदी क्विज़<br>इत्यादि का आयोजन करता है |&nbsp;<br>क्लब समय समय पर&nbsp;साहित्य लेखन की विविध विधाओं
+                            में प्रतियोगिताएँ, कार्यशालाएं, वार्ताएं इत्यादि&nbsp;आयोजित करता है <br>क्लब संस्थान की&nbsp;डिबेटिंग सोसाइटी (Deb-Soc) के साथ मिलकर एक<br>वार्षिक पत्रिका का प्रकाशन करवाता है जिसमे क्लब के सदस्यों की रचनाएँ समाहित&nbsp;होती
+                            हैं |<br>उपरोक्त गतिविधियों के अलावा किसी भी नयी&nbsp;योजना या सुझाव का क्लब तह-ए-दिल से स्वागत करता है | यदि आपके पास साहित्य से<br>जुड़ा कोई सुझाव है तो हमें अवश्य सूचित करें |<br><br><br><br><br><br></p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-
+    </div>
     <section id="videos">
     <div class="container">
         <div class="row">
@@ -202,12 +222,6 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
     <section id="team" class="bg-light">
         <div class="container">
             <div class="row">
@@ -288,7 +302,7 @@
             </div>
         </div>
     </div>
-    <section id="imp" style="background-image:url('cadence/img/map-image.png');">
+    <section id="imp" style="background-image:url('xpressions/img/map-image.png');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -324,11 +338,11 @@
             </div>
         </footer>
     </div>
-    <script src="{% static 'cadence/js/jquery.min.js' %}"></script>
-    <script src="{% static 'cadence/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'litsoc/js/jquery.min.js' %}"></script>
+    <script src="{% static 'litsoc/bootstrap/js/bootstrap.min.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="{% static 'cadence/js/agency.js' %}"></script>
-    <script src="{% static 'cadence/js/bs-animation.js' %}"></script>
+    <script src="{% static 'litsoc/js/agency.js' %}"></script>
+    <script src="{% static 'litsoc/js/bs-animation.js' %}"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
 </body>
 

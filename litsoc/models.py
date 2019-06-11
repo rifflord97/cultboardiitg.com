@@ -6,7 +6,7 @@ class Club_sec(models.Model):
     name = models.CharField(max_length=100)
     position = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
-    contact = models.CharField(max_length=100)
+    contact_us = models.CharField(max_length=100)
     email_us = models.CharField(max_length=100)
     facebook = models.CharField(max_length=100, blank=True, null=True)
     instagram = models.CharField(max_length=100, blank=True, null=True)
