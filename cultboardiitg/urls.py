@@ -31,8 +31,8 @@ urlpatterns = [
     #path('clubs/debsoc/', include('debsoc.urls')),
     path('clubs/finesse/', include('finesse.urls')),
     path('clubs/litsoc/', include('litsoc.urls')),
-    #path('clubs/lumiere/', include('lumiere.urls')),
-    #path('clubs/montage/', include('montage.urls')),
+    path('clubs/lumiere/', include('lumiere.urls')),
+    path('clubs/montage/', include('montage.urls')),
     path('clubs/octaves/', include('octaves.urls')),
 
 ]

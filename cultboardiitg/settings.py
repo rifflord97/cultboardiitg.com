@@ -49,8 +49,8 @@ INSTALLED_APPS = [
     #'debsoc.apps.DebsocConfig',
     'finesse.apps.FinesseConfig',
     'litsoc.apps.LitsocConfig',
-    #'lumiere.apps.LumiereConfig',
-    #'montage.apps.MontageConfig',
+    'lumiere.apps.LumiereConfig',
+    'montage.apps.MontageConfig',
 
 ]
 

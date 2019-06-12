@@ -30,6 +30,7 @@
         <option value="$MODULE_DIR$/anr/templates" />
         <option value="$MODULE_DIR$/litsoc/templates" />
         <option value="$MODULE_DIR$/octaves/templates" />
+        <option value="$MODULE_DIR$/finesse/templates" />
       </list>
     </option>
   </component>
