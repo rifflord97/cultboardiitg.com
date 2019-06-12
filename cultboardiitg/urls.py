@@ -29,7 +29,7 @@ urlpatterns = [
     path('clubs/anr/', include('anr.urls')),
     path('clubs/cadence/', include('cadence.urls')),
     #path('clubs/debsoc/', include('debsoc.urls')),
-    #path('clubs/finnesse/', include('finnesse.urls')),
+    path('clubs/finesse/', include('finesse.urls')),
     path('clubs/litsoc/', include('litsoc.urls')),
     #path('clubs/lumiere/', include('lumiere.urls')),
     #path('clubs/montage/', include('montage.urls')),

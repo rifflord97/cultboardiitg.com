@@ -6,19 +6,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Brand</title>
-    <link rel="stylesheet" href="{% static 'xpressions/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'finesse/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
-    <link rel="stylesheet" href="{% static 'xpressions/fonts/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="{% static 'xpressions/fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'finesse/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'finesse/fonts/ionicons.min.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600">
-    <link rel="stylesheet" href="{% static 'xpressions/css/Footer-Dark.css' %}">
-    <link rel="stylesheet" href="{% static 'xpressions/css/Article-List.css' %}">
+    <link rel="stylesheet" href="{% static 'finesse/css/Footer-Dark.css' %}">
+    <link rel="stylesheet" href="{% static 'finesse/css/Article-List.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
-    <link rel="stylesheet" href="{% static 'xpressions/css/Team-Boxed.css' %}">
+    <link rel="stylesheet" href="{% static 'finesse/css/Team-Boxed.css' %}">
 </head>
 
 <body id="page-top">
@@ -29,7 +29,7 @@
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">The Clubs</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">LitSoc | Literary Club</a><a class="dropdown-item" role="presentation" href="#">Ocatves | Music Club</a><a class="dropdown-item" role="presentation" href="#">Xpression | Drama Club</a>
-                            <a class="dropdown-item" role="presentation" href="#">DebSoc | Debate Club</a><a class="dropdown-item" role="presentation" href="#">Anchorenza | Anchoring Club</a><a class="dropdown-item" role="presentation" href="#">Cadence | Dance Club</a><a class="dropdown-item" role="presentation"
+                            <a class="dropdown-item" role="presentation" href="#">DebSoc | Debate Club</a><a class="dropdown-item" role="presentation" href="#">Anchorenza | Anchoring Club</a><a class="dropdown-item" role="presentation" href="#">finesse | Dance Club</a><a class="dropdown-item" role="presentation"
                                         href="#">DebSoc| Debating Club</a><a class="dropdown-item" role="presentation" href="#">Montage| Photography Club</a><a class="dropdown-item" role="presentation" href="#">Lumiere | Movie Club</a></div>
                     </li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Events</a>
@@ -74,9 +74,7 @@
             </div>
             <div class="row" style="padding: 18px;">
                 <div class="col-md-6">
-                    <p style="height: 330px;">Xpressions- The Dramatics Society of IIT Guwahati and Tamachey - The Nukkad Society of IIT Guwahati is a bunch of aesthetes from the IITG family who thrives to bring a change in society by portraying the problems and issues in a riveting manner through popular art forms of dramatics - Theatre, Mimes, Nukkad Naataks(Street Play) , Movies.</p>
-                    <h2>Aim</h2>
-                    <p style="height: 330px;">Xpressions!- Xpress Your Heart Out! Ever felt that theatre was your calling? Ever been called a ‘nautankibaaz’ by your friends? Ever felt like going mad on stage? Ever felt like making people cry or laugh with your drama? Ever felt to see your Short stories in a form of movie? If yes, well then, Xpressions is the place to be. With a platform amalgamating your talent in acting with a lot of fun and masti, IIT Guwahati welcomes you to its drama club.</p>
+                    <p style="height: 330px;">It is a universal phenomenon that in childhood every child dribbles his/her world through colourful pastels and watercolours. As the child matures into an adult, the practice and passion gradually fades away in the midst of gruelling academic stress and parental demands. The immense competition and thirst for success pushes back the once creative and fearless soul of that child. Art gives you a chance to find yourself according to your imagination and solitude. Art helps you understand yourself better by making you realise that you can also create something beautiful. Art indulges your senses into building a connection with your creative mind and Mother Nature. Art makes you feel good! With this spirit, the Fine arts club welcomes all the kalakaars in a creative journey. Starting with the event ‘Love you Kalakaar’, which got an overwhelming response, Fine arts club promises to make the coming months more colourful and full of life. Regular monthly classes and demonstrations from reputed artists, discussions on artworks, a fine-art festival with loads of other fun events ensures you for a really exciting time in the campus. So, fear not all the kalakaars, as you dust off your worries and let the creative being shine bright. Anyone and everyone are welcome in the club. Keep your spirits burning!</p>
                 </div>
                 <div class="col-md-6">
                     <div class="carousel slide" data-ride="carousel" id="carousel-2">
@@ -91,7 +89,7 @@
                                     <h3 class="name">{{ s.name }}</h3>
                                     <p class="title">{{ s.position }}</p>
                                     <p class="title">{{ s.description }}</p>
-                                    <p style="height: auto;">Contact: {{ s.contact_us }}</p>
+                                    <p style="height: auto;">Contact: {{ s.contact }}</p>
                                     <p style="height: auto;">Email: {{ s.email_us }}</p>
                                     <div class="social" style="padding: 0px;margin-bottom: 38px;"><a href="#{{ s.facebook }}" style="margin: 5px;"><i class="fa fa-facebook-official"></i></a><a href="#{{ s.instagram }}"><i class="fa fa-instagram"></i></a></div>
                                 </div>
@@ -151,12 +149,16 @@
                 <h1 class="text-center">What We Do</h1>
             </div>
             <div class="text-left">
-                <p>Make way for the 'Nautankibaaz's of the campus, for there's no stopping for your Xpressions! Crowds witness, enthralled, the antics of the club as they make them laugh, cry, chuckle, sometimes ponder and always cheer! Watch them break through the five walls of dramatics into a territory they've effortlessly made their own! The club has been bringing forth the various shades of drama since the year '2008'. Established by our very own SajinJadoo, the club has come a long way, stamping it's authority at festivals across the country and most importantly, the hearts of the IIT-G junta! Living up to the traditions of excellence, the club has brought various Glories to IIT Guwahati.
-So, if you wanna show everybody YOUR Xpressions, just come to us and be part of the fun! With loads of treats and parties, loads of pranks, hasi and mazak, you can well imagine what happens when a bunch of dramebaaz gets together! Come, lend your expressions to Xpressions!</p>
+                <p>Welcome aboard ! The finesse,the fine arts club of IITG is here to serve you all aspects of visual
+and fine arts.We are a group of art enthusiasts trying to stimulate and encourage the artist
+within everyone.The yearlong activities that we conduct serve aa a wonderful platform for
+learning and exploring various art forms and the creativity within everyone.The CLub aims to
+promote various Visual and Fine Arts among campus residents and maintain a healthy
+                    atmosphere for the growth of arts by experimentation and collaboration to create something new</p>
             </div>
         </div>
-
     </section>
+
     <section id="videos">
     <div class="container">
         <div class="row">
@@ -179,8 +181,8 @@ So, if you wanna show everybody YOUR Xpressions, just come to us and be part of 
                             </div>
                         {% endfor %}
                             </div>
-                    <div><a class="carousel-control-prev" href="#carousel-7" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-7" role="button"
-                            data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                    <div><a class="carousel-control-prev" href="#carousel-7" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #000000"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-7" role="button"
+                            data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #000000"></span><span class="sr-only">Next</span></a></div>
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-7" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-7" data-slide-to="1"></li>
@@ -198,66 +200,67 @@ So, if you wanna show everybody YOUR Xpressions, just come to us and be part of 
 
 
     <section id="team" class="bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="text-uppercase">Club Members</h2>
-            </div>
-        </div>
-    </div>
-    <div class="carousel slide" data-ride="carousel" id="teamcarousel">
-        <div class="carousel-inner" role="listbox">
-            {% for m in memb %}
-            {% if forloop.counter == 1 %}
-                <div class="carousel-item active">
-            {% else %}
-                <div class="carousel-item">
-            {% endif %}
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="team-member"><img class="rounded-circle mx-auto" src="{{ m.image1.url }}">
-                            <h4>{{ m.name1 }}</h4>
-                            <ul class="list-inline social-buttons">
-                                <li class="list-inline-item"></li>
-                                <li class="list-inline-item"><a href="{{ m.facebook1 }}"><i class="fa fa-facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="{{ m.instagram1 }}"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member"><img class="rounded-circle mx-auto" src="{{ m.image2.url }}">
-                            <h4>{{ m.name2 }}</h4>
-                            <ul class="list-inline social-buttons">
-                                <li class="list-inline-item"></li>
-                                <li class="list-inline-item"><a href="{{ m.facebook2 }}"><i class="fa fa-facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="{{ m.instagram2 }}"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member"><img class="rounded-circle mx-auto" src="{{ m.image3.url }}">
-                            <h4>{{ m.name3 }}</h4>
-                            <ul class="list-inline social-buttons">
-                                <li class="list-inline-item"></li>
-                                <li class="list-inline-item"><a href="{{ m.facebook3 }}"><i class="fa fa-facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="{{ m.instagram3 }}"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase">Club Members</h2>
                 </div>
             </div>
-            {% endfor %}
+            <div class="carousel slide" data-ride="carousel" id="carousel-3">
+                <div class="carousel-inner" role="listbox">
+                    {% for m in memb %}
+                        {% if forloop.first %}
+                            <div class="carousel-item active">
+                        {% else %}
+                            <div class="carousel-item">
+                        {% endif %}
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="team-member"><img class="rounded-circle mx-auto" src="{{ m.image1.url }}">
+                                        <h4>{{ m.name1 }}</h4>
+                                        <ul class="list-inline social-buttons" style="margin-top: 20px;">
+                                            <li class="list-inline-item"></li>
+                                            <li class="list-inline-item"><a href="#{{ m.facebook1 }}"><i class="fa fa-facebook"></i></a></li>
+                                            <li class="list-inline-item"><a href="#{{ m.instagram1 }}"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="team-member"><img class="rounded-circle mx-auto" src="{{ m.image2.url }}">
+                                        <h4>{{ m.name2 }}</h4>
+                                        <ul class="list-inline social-buttons" style="margin-top: 20px;">
+                                            <li class="list-inline-item"></li>
+                                            <li class="list-inline-item"><a href="#{{ m.facebook2 }}"><i class="fa fa-facebook"></i></a></li>
+                                            <li class="list-inline-item"><a href="#{{ m.instagram2 }}"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="team-member"><img class="rounded-circle mx-auto" src="{{ m.image3.url }}">
+                                        <h4>{{ m.name3 }}</h4>
+                                        <ul class="list-inline social-buttons" style="margin-top: 20px;">
+                                            <li class="list-inline-item"></li>
+                                            <li class="list-inline-item"><a href="#{{ m.facebook3 }}"><i class="fa fa-facebook"></i></a></li>
+                                            <li class="list-inline-item"><a href="#{{ m.instagram3 }}"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <div><a class="carousel-control-prev" href="#carousel-3" role="button" data-slide="prev" style="width: 50px;"><span class="carousel-control-prev-icon border rounded-circle" style="background-color: #000000;"></span><span class="sr-only">Previous</span></a>
+                    <a
+                        class="carousel-control-next" href="#carousel-3" role="button" data-slide="next" style="width: 50px;"><span class="carousel-control-next-icon border rounded-circle" style="background-color: #000000;"></span><span class="sr-only">Next</span></a>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-3" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-3" data-slide-to="1"></li>
+                    <li data-target="#carousel-3" data-slide-to="2"></li>
+                </ol>
             </div>
-
-        <div><a class="carousel-control-prev" href="#teamcarousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" style="background-color: #000000;"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#teamcarousel" role="button"
-                data-slide="next"><span class="carousel-control-next-icon" style="background-color: #000000;"></span><span class="sr-only">Next</span></a></div>
-        <ol class="carousel-indicators">
-            <li data-target="#teamcarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#teamcarousel" data-slide-to="1"></li>
-        </ol>
-    </div>
-</section>
-
+        </div>
+    </section>
     <div id="acheivements" style="height: auto;">
         <div class="container" style="height: auto;">
             <div class="row">
@@ -276,7 +279,7 @@ So, if you wanna show everybody YOUR Xpressions, just come to us and be part of 
             </div>
         </div>
     </div>
-    <section id="imp" style="background-image:url('xpressions/img/map-image.png');">
+    <section id="imp" style="background-image:url('finesse/img/map-image.png');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -312,11 +315,11 @@ So, if you wanna show everybody YOUR Xpressions, just come to us and be part of 
             </div>
         </footer>
     </div>
-    <script src="{% static 'xpressions/js/jquery.min.js' %}"></script>
-    <script src="{% static 'xpressions/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'finesse/js/jquery.min.js' %}"></script>
+    <script src="{% static 'finesse/bootstrap/js/bootstrap.min.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="{% static 'xpressions/js/agency.js' %}"></script>
-    <script src="{% static 'xpressions/js/bs-animation.js' %}"></script>
+    <script src="{% static 'finesse/js/agency.js' %}"></script>
+    <script src="{% static 'finesse/js/bs-animation.js' %}"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
 </body>
 

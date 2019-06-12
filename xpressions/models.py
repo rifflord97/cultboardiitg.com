@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Club_sec(models.Model):
-    image = models.FileField()
+    image = models.FileField(upload_to='./xpressions/')
     name = models.CharField(max_length=100)
     position = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
@@ -13,7 +13,7 @@ class Club_sec(models.Model):
 
 
 class Gallery(models.Model):
-    image = models.FileField()
+    image = models.FileField(upload_to='./xpressions/gallery')
 
 
 class Youtube(models.Model):
@@ -21,15 +21,15 @@ class Youtube(models.Model):
 
 
 class Club_Member(models.Model):
-    image1 = models.FileField(blank=True, null=True)
+    image1 = models.FileField(upload_to='./xpressions/members', blank=True, null=True)
     name1 = models.CharField(max_length=100, blank=True, null=True)
     facebook1 = models.CharField(max_length=100, blank=True, null=True)
     instagram1 = models.CharField(max_length=100, blank=True, null=True)
-    image2 = models.FileField(blank=True, null=True)
+    image2 = models.FileField(upload_to='./xpressions/members', blank=True, null=True)
     name2 = models.CharField(max_length=100, blank=True, null=True)
     facebook2 = models.CharField(max_length=100, blank=True, null=True)
     instagram2 = models.CharField(max_length=100, blank=True, null=True)
-    image3 = models.FileField(blank=True, null=True)
+    image3 = models.FileField(upload_to='./xpressions/members', blank=True, null=True)
     name3 = models.CharField(max_length=100, blank=True, null=True)
     facebook3 = models.CharField(max_length=100, blank=True, null=True)
     instagram3 = models.CharField(max_length=100, blank=True, null=True)

@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'anr.apps.AnrConfig',
     'cadence.apps.CadenceConfig',
     #'debsoc.apps.DebsocConfig',
-    #'finnesse.apps.FinnesseConfig',
+    'finesse.apps.FinesseConfig',
     'litsoc.apps.LitsocConfig',
     #'lumiere.apps.LumiereConfig',
     #'montage.apps.MontageConfig',
