@@ -21,17 +21,29 @@
 <body class="flex-row justify-content-center">
     <section class="d-flex flex-column justify-content-between" data-bs-parallax-bg="true" id="hero">
         <nav class="navbar navbar-light navbar-expand-md">
-            <div class="container-fluid"><a class="navbar-brand" href="#"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse"
-                    id="navcol-1">
+            <div class="container-fluid"><a class="navbar-brand" data-bs-hover-animate="pulse" href="#"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color: rgb(11,10,0);">home</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color: rgb(4,4,0);">the clubs</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">events</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color: rgb(0,0,0);">blog</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color: rgb(0,0,0);">contact us</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'home:index' %}">Home</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">The Clubs</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="{% url 'clubs_litsoc:clubs_litsoc' %}">LitSoc | Literary Club</a><a class="dropdown-item" role="presentation" href="{% url 'clubs_octaves:clubs_octaves' %}">Octaves | Music Club</a><a class="dropdown-item" role="presentation" href="{% url 'clubs_xpressions:clubs_xpressions' %}">Xpression | Drama Club</a>
+                                <a
+                                    class="dropdown-item" role="presentation" href="{% url 'clubs_debsoc:clubs_debsoc' %}">DebSoc | Debate Club</a><a class="dropdown-item" role="presentation" href="{% url 'clubs_anr:clubs_anr' %}">Anchorenza and RadioG</a><a class="dropdown-item" role="presentation" href="{% url 'clubs_cadence:clubs_cadence' %}">Cadence | Dance Club</a><a class="dropdown-item" role="presentation" href="{% url 'clubs_montage:clubs_montage' %}">Montage| Photography Club</a><a class="dropdown-item" role="presentation" href="{% url 'clubs_lumiere:clubs_lumiere' %}">Lumiere | Movie Club</a></div>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Events</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">PAF | Performing Arts Festival</a>
+                                <a class="dropdown-item" role="presentation" href="https://www.alcheringa.in/">Alcheringa</a>
+                                <a class="dropdown-item" role="presentation" href="{% url 'manthan:manthan' %}">Manthan</a>
+                                <a class="dropdown-item" role="presentation" href="{% url 'all_events:events' %}">Club Showcases</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item" role="presentation"></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'team:team' %}">The Team</a></li>
                     </ul>
-                </div>
+            </div>
             </div>
         </nav>
 
@@ -92,6 +104,28 @@
             </div>
         </div>
     </nav>
+    <div class="footer-dark">
+        <div class="col item social"><a href="https://www.facebook.com/iitgCulturals/"><i class="icon ion-social-facebook"></i></a><a href="mailto:cultsec@iitg.ac.in"><i class="icon ion-android-mail"></i></a><a href="https://www.youtube.com/channel/UC_croodKpWk9A0qPhxUBD9w"><i class="icon ion-social-youtube"></i></a></div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3></h3>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">Cultural Board, IIT Guwahati © 2019</p>
+                <p> Page Maintained by General Secretary Cultural Board<hr></p>
+                <p>Project Head: Aditya Kakoti</p>
+                <p>Associate Project Head: Abhishekh Tiwari</p>
+                <p>Designers: Ayush Kiran and Heramb Kininikar</p>
+            </div>
+        </footer>
+    </div>
     <script src="{% static 'manthan/js/jquery.min.js' %}"></script>
     <script src="{% static 'manthan/bootstrap/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'manthan/js/bs-animation.js' %}"></script>

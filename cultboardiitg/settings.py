@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'xpressions.apps.XpressionsConfig',
     'anr.apps.AnrConfig',
     'cadence.apps.CadenceConfig',
-    #'debsoc.apps.DebsocConfig',
+    'debsoc.apps.DebsocConfig',
     'finesse.apps.FinesseConfig',
     'litsoc.apps.LitsocConfig',
     'lumiere.apps.LumiereConfig',
@@ -148,3 +148,6 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+#Backend by rifflord97 (Aditya Kakoti)

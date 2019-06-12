@@ -28,7 +28,7 @@ urlpatterns = [
     path('home/', include('home.urls')),
     path('clubs/anr/', include('anr.urls')),
     path('clubs/cadence/', include('cadence.urls')),
-    #path('clubs/debsoc/', include('debsoc.urls')),
+    path('clubs/debsoc/', include('debsoc.urls')),
     path('clubs/finesse/', include('finesse.urls')),
     path('clubs/litsoc/', include('litsoc.urls')),
     path('clubs/lumiere/', include('lumiere.urls')),
